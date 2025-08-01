@@ -1,0 +1,55 @@
+cd path/to/your/project
+
+cd stands for change directory.
+Navigate to the folder where your code files are stored.
+
+
+git init
+
+This creates a new Git repository in your folder.
+It adds a hidden .git folder where Git stores all version history.
+
+
+git add .
+
+This stages all your files (prepares them for commit).
+The . means "add everything in this folder".
+
+You can also add specific files like:   git add file1.java file2.java
+
+
+git commit -m "Initial commit - Added Linked List problems"
+
+This saves a snapshot of your code.
+-m lets you add a commit message describing what you did.
+
+
+
+git remote add origin https://github.com/your-username/your-repo-name.git
+
+Connects your local Git repo to GitHub.
+Replace the URL with your actual GitHub repo link.
+
+
+git branch -M main
+
+Renames the default branch to main (GitHub uses main by default).
+Do this if your current branch is named master.
+
+
+git push -u origin main
+
+Sends your local commits to GitHub.
+origin is the remote GitHub repo.
+main is the branch you’re pushing to.
+-u sets upstream tracking so you can later just use git push.
+
+
+After this, to push future updates:
+
+git add .
+git commit -m "Your new message"
+git push
+
+
+
